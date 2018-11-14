@@ -9,14 +9,17 @@
 	<title>Image Gallery</title>
 	<!-- bootstrap link -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-
+	<!-- this style sheet adds padding around the body so that the jumbo tron is  -->
+	<!-- 	no longer cut off by the nav bar -->
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+	<!-- font awesome for icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 </head>
 <body>
 	<!-- NAV BAR -->
 	<!--  default navbar -->
-		<nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -47,7 +50,7 @@
 	<!-- with glph icon -->
 	<div class = "container">
 		<div class = "jumbotron">
-			<h1><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> The Image Gallery</h1>
+			<h1><i class="fas fa-camera-retro"></i> The Image Gallery</h1>
 			<p>See these pics that are in the BootStrap Grid System below...</p>
 		</div>
 
