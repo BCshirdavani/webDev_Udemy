@@ -12,10 +12,23 @@
     color: #ea1c2c;
 }
 
+#headingGroup span {
+    color: #ea1c2c;
+}
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
 body {
     background: #f5d9d5;
     font-family: "Nunito", sans-serif;
 }
 
-
-
+/* media querry */
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
