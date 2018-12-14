@@ -38,8 +38,16 @@ body {
 }
 
 .content {
-    margin-top: 100px
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
+
+/*  scrolling navbar color class */
+.navbar.scrolled {
+    background: rgb(222,192,222);
+    transition: background 1s;
+}
+
 
 /* media querry */
 @media (max-width: 1200px) {
@@ -50,4 +58,5 @@ body {
 }
 
 .invert {-webkit-filter: invert(100%);}
+
 
