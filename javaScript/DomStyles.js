@@ -44,3 +44,14 @@ for(var i = 0; i < lis.length; i++){
         this.style.background = "red";
     });
 }
+
+var but = document.querySelector("button");
+var body = document.querySelector("body");
+but.addEventListener("click", function(){
+    if (body.style.background == "pink"){
+        body.style.background = "white";
+    }
+    else{
+        body.style.background = "pink";
+    }
+})
