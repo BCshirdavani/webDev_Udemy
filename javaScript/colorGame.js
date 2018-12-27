@@ -50,6 +50,8 @@ hardBtn.addEventListener("click", function(){
 
 
 resetButton.addEventListener("click", function(){
+    messageDisplay.textContent = "";
+    this.textContent = "New Colors";
     console.log("clicked reset");
     numSquares = 6;
     colors = generateRandomColors(numSquares);
