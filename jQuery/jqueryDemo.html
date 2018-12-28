@@ -7,6 +7,22 @@
     <!-- add jQuery using CDN -->
     <script   src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
 
+    <style type="text/css">
+    .correct {
+        color: green;
+    }
+    .wrong {
+        color: red;
+        background: pink;
+    }
+    .done {
+        color: grey;
+        text-decoration: line-through
+    }
+    </style>
+    <!-- adding classes, with jQuery -->
+    <!-- $('h1').addClass("correct") -->
+
 </head>
 <body>
     <h1>jQuery Demo</h1>
@@ -25,11 +41,25 @@
         <li id="adorable">Pine Marten</li>
     </ul>
 
-    <img src="https://i.imgur.com/OmcQhpN.jpg">
-    <img src="https://i.imgur.com/OmcQhpN.jpg">
-    <img src="https://i.imgur.com/OmcQhpN.jpg">
+    <img src="https://i.imgur.com/OmcQhpN.jpg" width="200px">
+    <img src="https://i.imgur.com/OmcQhpN.jpg" width="200px">
+    <img src="https://i.imgur.com/OmcQhpN.jpg" width="200px">
     <!-- jQurry command for image width -->
     <!-- $("img").css("width", "200px") -->
+
+    <h1>jQuery Events</h1>
+
+    <button>Don't Click Me</button>
+    <button>But seriously...don't</button>
+    <button>Final warning brah</button>
+
+    <!-- jQuery Event -->
+    <script>
+    $('h1').click(function(){
+        alert("h1 clicked \n-alert added with jQuery");
+    })
+    </script>
+
 </body>
 </html>
 
