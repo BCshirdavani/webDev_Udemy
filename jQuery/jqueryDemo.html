@@ -48,7 +48,7 @@
     <!-- $("img").css("width", "200px") -->
 
     <h1>jQuery Events</h1>
-
+    <input type = "text" id="textIN">
     <button>Don't Click Me</button>
     <button>But seriously...don't</button>
     <button>Final warning brah</button>
@@ -59,6 +59,15 @@
         alert("h1 clicked \n-alert added with jQuery");
     })
     </script>
+    <!-- $(this) is the jQuery version of this -->
+    <script>$('button').click(function(){$(this).css("background","pink")})</script>
+    <script>$('#textIN').keypress(function(event){
+        console.log("user hit:\t", event.key);
+        console.log("keyCode:\t", event.which);
+        if(event.which == 13){
+            alert("you hit enter");
+        }
+    })</script>
 
 </body>
 </html>
