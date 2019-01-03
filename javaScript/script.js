@@ -72,3 +72,7 @@ var fruits = ['banana', 'orange', 'lemon', 'apple', 'mango'];
 var citrus = fruits.slice(1,3);
 console.log(citrus);
 
+
+window.setTimeout(function() {
+    // put all of your JS code from the lecture here
+  }, 500);
