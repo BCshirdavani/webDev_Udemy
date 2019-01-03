@@ -59,8 +59,11 @@
         alert("h1 clicked \n-alert added with jQuery");
     })
     </script>
+
     <!-- $(this) is the jQuery version of this -->
     <script>$('button').click(function(){$(this).css("background","pink")})</script>
+    
+    <!-- .keyPress() method -->
     <script>$('#textIN').keypress(function(event){
         console.log("user hit:\t", event.key);
         console.log("keyCode:\t", event.which);
@@ -68,6 +71,18 @@
             alert("you hit enter");
         }
     })</script>
+
+    <!-- .on() method for click listeners -->
+    <script>$("h1").on("click", function(){
+        $(this).css("color","purple");
+    })</script>
+
+    <script>$("button").on("mouseenter", function(){
+        $(this).css("font-weight", "bold");
+    })</script>
+        <script>$("button").on("mouseleave", function(){
+            $(this).css("font-weight", "normal");
+        })</script>
 
 </body>
 </html>
